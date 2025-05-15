@@ -1,179 +1,192 @@
 /* Base Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #2C2C2C;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #ECF2FF;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .main-container {
-  display: flex;
-  max-width: 650px;
-  width: 100%;
-  background-color: #1A1A1A;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
+    display: flex;
+    max-width: 650px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-/* Your Result Section - Cores escuras */
+/* Your Result Section */
 .your-result-container {
-  flex: 1;
-  background-color: #1E1E1E;
-  padding: 30px;
-  color: white;
-  text-align: center;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  border: 1px solid #444444;
+    flex: 1;
+    background: linear-gradient(to bottom, #7857FF, #2E2BE9);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .accent-bar {
-  color: #E6E6E6;
-  font-size: 18px;
-  margin-bottom: 5px;
+    color: #C8C7FF;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .score-circle {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  background-color: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  border: 2px solid #4D4D4D;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #4E21CA, rgba(77, 33, 201, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
 }
 
-
 .circle-content {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  justify-content: center;
-  gap: 4px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .score-circle-strong {
-  font-size: 56px;
-  line-height: 1; 
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1;
 }
 
 .score-circle-small {
-  font-size: 16px;
-  opacity: 0.7;
+    color: #C8C7FF;
+    opacity: 0.7;
+    font-size: 16px;
 }
 
 .result-title {
-  font-size: 24px;
-  color: #F5F5F5;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .result-description {
-  color: #CCCCCC;
-  max-width: 230px;
-  line-height: 1.4;
-  font-size: 14px;
+    color: #C8C7FF;
+    max-width: 230px;
+    line-height: 1.4;
 }
 
-/* Summary Section - Cores claras */
+/* Summary Section */
 .summary-container {
-  flex: 1;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background-color: #F5F5F5;
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .summary-accent-bar {
-  font-size: 18px;
-  font-weight: 700;
-  color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+    color: #303B59;
 }
 
 .senses-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    list-style: none;
 }
 
 .senses-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-  border-radius: 8px;
-  background-color: #FFFFFF;
-  border: 1px solid #E0E0E0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border-radius: 10px;
 }
 
 .senses-content {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #333333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .senses-content img {
-  width: 16px;
+    width: 18px;
 }
 
 .senses-value {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .bold-senses {
-  font-weight: 700;
-  color: #1A1A1A;
+    font-weight: 700;
+    color: #303B59;
 }
 
 .small-senses {
-  color: #808080;
+    color: #979797;
+}
+
+/* Category Specific Colors */
+.reaction {
+    background-color: rgba(255, 87, 87, 0.05);
+    color: #FF5555;
+}
+
+.memory {
+    background-color: rgba(255, 176, 31, 0.05);
+    color: #FFB21E;
+}
+
+.verbal {
+    background-color: rgba(0, 189, 145, 0.05);
+    color: #00BD91;
+}
+
+.visual {
+    background-color: rgba(17, 37, 212, 0.05);
+    color: #1125D6;
 }
 
 /* Button */
 .summary-button {
-  background-color: #1A1A1A;
-  color: white;
-  border: none;
-  padding: 14px;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s;
+    background-color: #303B59;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
 .summary-button:hover {
-  background-color: #333333;
+    background-color: #1125D6;
 }
 
 /* Responsive Design */
 @media (max-width: 650px) {
-  .main-container {
-      flex-direction: column;
-  }
-  
-  .your-result-container {
-      border-radius: 0;
-      border-bottom: 1px solid #444444;
-  }
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .your-result-container {
+        border-radius: 0 0 25px 25px;
+    }
 }
